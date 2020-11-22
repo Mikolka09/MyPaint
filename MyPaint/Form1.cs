@@ -247,6 +247,7 @@ namespace MyPaint
         {
             Graphics g = pictureBox1.CreateGraphics();
             g.Clear(Color.White);
+            pictureBox1.Image = null;
             snap = new Bitmap(pictureBox1.ClientRectangle.Width, pictureBox1.ClientRectangle.Height);
             temp = (Bitmap)snap.Clone();
             g.Dispose();
